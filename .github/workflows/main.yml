@@ -25,8 +25,8 @@ jobs:
                 file: 02-kube-news/src/Dockerfile
                 push: true
                 tags: |
-                  dennisoliveira/kube-news-maratona:latest
                   dennisoliveira/kube-news-maratona:${{ github.run_number }}
+                  dennisoliveira/kube-news-maratona:latest
 
     CD:
         needs: [CI]
